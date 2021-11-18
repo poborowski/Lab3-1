@@ -33,13 +33,13 @@ namespace WebApplication2.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        public IActionResult Index2()
+        public IActionResult Index1()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Index2(FormModel model)
+        public IActionResult Index1(FormModel model)
         {
 
             if (ModelState.IsValid)
